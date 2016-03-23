@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	padding:0;
+	margin:0;
+	text-align:center;
+}
+div#pagina{
+	width: 765px;
+	margin: 0 auto;
+	border-left:thin solid #000;
+	border-right: thin solid;
+}
+div#cabecalho{
+	background-color:#06F;
+	text-align:left;
+}
+div#logotipo{
+	float:left;
+	width:590px;
+	height:75px;
+}
+div#publicidade{
+	margin-left:590px;
+	height: 75px;
+	background-color:#093;
+}
+div#guiamenu{
+	background-color:#930;
+}
+div#itensmenu{
+	float:left;
+	width:180px;
+	height:300px;
+	background-color:#9C3;
+}
+div#conteudo{
+	text-align:left;
+	text-indent:12px;
+}
+div#rodape{
+	text-align: center;
+	height: 30px;
+	background-color: #6CF;
+	border-top: thin solid #006;
+	border-bottom:thin solid #000;
+}
+div#corpo{
+	background-color:#0F3;
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+} 
+/* MENU DO SITE */
+
+ul {
+	list-style-type: none;
+	text-align:center;
+	background-image:url(fundo_bg.png);
+	background-repeat:repeat-x;
+	padding: 15px 15px;
+}
+li {
+	display:inline;
+}
+ul li a {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	width:10em;
+	color:#FFF;
+	padding: 5px 15px;
+}
+ul li a:hover {
+	/*
+	border-bottom-style:solid;
+	border-bottom-color:#F00;
+	border-bottom-width:thick;
+	*/
+	background-color:#0099ff;
+	padding: 15px 15px;
+}
+</style>
+</head>
+
+<body>
+<div id="pagina">
+	<div id="cabecalho">
+    	<div id="logotipo">Logotipo</div>
+        <div id="publicidade">Publicidade</div>
+        <div id="guiamenu">
+        <ul>
+			<li><a href="#">Grêmio</a></li>
+    		<li><a href="#">Internacional</a></li>
+    		<li><a href="#">Juventude</a></li>
+    		<li><a href="#">Caxias</a></li>
+    		<li><a href="#">São Luiz</a></li>
+    		<li><a href="#">Novo Hamburgo</a></li>
+		</ul>
+        </div>
+    </div>
+    <div id="corpo">
+    	<div id="itensmenu">ItensMenu</div>
+        <div id="conteudo">Conteudo</div>
+    </div>
+    <div id="rodape">Rodape</div>
+</div>
+</body>
+</html>
