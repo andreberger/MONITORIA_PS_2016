@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+p:first-line { /* Peudoclasse do paragrafo - primeira linha*/
+font-family: Tahoma;
+color: #0000ff;
+}

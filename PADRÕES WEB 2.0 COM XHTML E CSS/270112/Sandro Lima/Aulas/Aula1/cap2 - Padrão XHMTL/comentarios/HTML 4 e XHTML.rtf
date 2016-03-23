@@ -1,0 +1,125 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fnil\fcharset0 Georgia;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red185\green57\blue29;\red254\green252\blue249;\red111\green109\blue99;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20260\viewh14400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs34 \cf2 \cb3 Diferen\'e7as entre XHTML e HTML\'a04 
+\f1\fs26 \cf4 outubro 21, 2006
+\f0\fs22 \
+\pard\pardeftab720\sa220
+\cf4 \
+Que o XHTML e o HTML4 tem diferen\'e7as, isso todos sabemos. Mas quais as diferen\'e7as, a n\'edvel de desenvolvimento, de se usar o XHTML?\
+Como o XHTML \'e9 uma aplica\'e7\'e3o XML, h\'e1 certas coisas que poderiam perfeitamente ser usadas no HTML 4.0 que agora n\'e3o podem ser mais usadas.\
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Documentos bem formados\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 O conceito de documentos bem formados foi introduzido pelo XML, e significa que todos os elementos devem ter uma tag que os fechem, e que devem ser escritos de uma maneira especial numa ordem correta, como mostrarei no exemplo abaixo.\
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira correta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <p>Jo\'e3o desceu do p\'e9 de <em>ma\'e7\'e3</em>.</p>
+\f0\fs22 \
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira incorreta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <p>Jo\'e3o desceu do p\'e9 de <em>ma\'e7\'e3</p>.</em>
+\f0\fs22 \
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Elementos e atributos devem ser escritos em min\'fasculas\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 Como o XML \'e9 case sensitive, h\'e1 a necessidade de se escrever as os elementos e atributos HTML em min\'fasculas, pois no XHTML, <ul> e <UL> s\'e3o diferentes.\
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Tags de fechamento para elementos n\'e3o-nulos\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 No HTML 4 \'e9 permitido em alguns elementos omitir as tags de fechamento ( </ > ), mas como o XML n\'e3o suporta omiss\'e3o de tags, todos os outros elementos que possuam algum conte\'fado devem possuir uma tag de fechamento.\
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira correta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <p>Este \'e9 um par\'e1grafo</p><p>Este \'e9 outro par\'e1grafo</p>
+\f0\fs22 \
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira incorreta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <p>Este \'e9 um par\'e1grafo<p>Este \'e9 outro par\'e1grafo
+\f0\fs22 \
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Valores de atributos devem estar entre aspas\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 Todos os valores de atributos devem estar entre aspas, mesmo que sejam num\'e9ricos.\
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira correta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <td colspan="2">35,2</td>
+\f0\fs22 \
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira incorreta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <td colspan=2>35,2</td>
+\f0\fs22 \
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Minimiza\'e7\'e3o de atributos\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 Como o XML n\'e3o suporta minimiza\'e7\'e3o de atributos, deve-se escrev\'ea-los por inteiro, sem redu\'e7\'e3o. Atributos como checked e compact n\'e3o podem aparecer sem que tenham um valor especificado.\
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira correta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <input disabled=\'94disabled\'94>
+\f0\fs22 \
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira incorreta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <input disabled>
+\f0\fs22 \
+\pard\pardeftab720\sa260
+
+\b\fs26 \cf4 Elementos vazios\
+\pard\pardeftab720\sa220
+
+\b0\fs22 \cf4 Os elementos vazios devem ter uma tag de fechamento ou ent\'e3o acabar a tag inicial com />. No caso, tanto faz usar\uc0\u8232 ou <br /> ou <hr></hr>.\
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira correta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <br /><hr/>
+\f0\fs22 \
+\pard\pardeftab720\sa300
+
+\b\fs18 \cf4 Maneira incorreta:\
+\pard\pardeftab720\sa220
+
+\f2\b0\fs20 \cf4 <br><hr>
+\f0\fs22 \
+\
+\
+}

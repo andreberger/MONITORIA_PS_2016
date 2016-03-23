@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>layout Tableless Básico</title>
+
+<style type="text/css">
+
+body{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14pt;	
+	color:rgb(0,0,0);
+	padding: 0;
+	margin: 0;
+	text-align:center;
+}
+
+
+div#pagina{
+	width:765px;	
+	margin: 0 auto;
+	border-left: 1px solid rgb(0,0,0);
+	border-right: 1px solid rgb(50,50,50);
+}
+	
+
+
+div#cabecalho{
+	background-color: rgb(201,218,177);
+	text-align:left;
+}
+
+div#logotipo{
+	float:left;
+	width: 590px;
+	height: 75px;
+}
+
+
+div#publicidade{
+	margin-left:590px;
+	height:75px;
+	background-color: rgb(233,209,48);
+}
+
+
+div#guiamenu{
+	background-color: rgb(0,0,0);
+}
+
+
+
+div#corpo{
+	background-color: rgb(240,240,240);
+	height: 300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+div#itensmenu{
+	float: left;
+	width:180px;
+	height:300px;
+	background-color: rgb(180,180,180);
+}
+
+div#conteudo{
+	text-align: left;
+	text-ident: 12px;
+}
+
+div#rodape{
+	text-align:center;
+	height: 30px;
+	background-color: rgb(254, 251, 224);
+	border-top: 1px solid rgb(235, 235, 235);
+	border-bottom: 1px solid rgb(0, 0, 0);
+	
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="pagina">
+	<div id="cabecalho">
+    	<div id="logotipo">Logotipo</div>
+    	<div id="publicidade">Publicidade</div>
+    	<div id="guiamenu">GuiaMenu</div>                
+    </div>
+	<div id="corpo">
+     	<div id="itensmenu">ItensMenu</div>
+    	<div id="conteudo">Conteudo</div>    
+    </div>
+	<div id="rodape">Rodapé</div>        
+</div>
+
+</body>
+</html>

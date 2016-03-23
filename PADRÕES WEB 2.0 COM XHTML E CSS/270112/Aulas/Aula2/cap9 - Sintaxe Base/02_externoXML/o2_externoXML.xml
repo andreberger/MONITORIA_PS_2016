@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/css" href="css-xml.css"?>
+<sistema>
+<banco>
+<nome>PostgreSQL</nome>
+<plataforma>GNU-Linux | Unix</plataforma>
+<versao>7.3.4</versao>
+</banco>
+<banco>
+<nome>Oracle</nome>
+<plataforma>Windows | GNU-Linux | Unix</plataforma>
+<versao>9i</versao>
+</banco>
+<banco>
+<nome>SQL Server</nome>
+<plataforma>Windows</plataforma>
+<versao>2000</versao>
+</banco>
+</sistema>

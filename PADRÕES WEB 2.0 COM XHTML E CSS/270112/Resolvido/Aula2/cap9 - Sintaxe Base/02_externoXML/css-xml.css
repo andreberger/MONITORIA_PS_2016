@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+banco{
+display: block;
+}
+nome {
+font-family: Verdana;
+font-size: 12px;
+}
+plataforma {
+font-family: "Times New Roman";
+color: #0000ff;
+}
+versao {
+background-color: #cccccc;
+}

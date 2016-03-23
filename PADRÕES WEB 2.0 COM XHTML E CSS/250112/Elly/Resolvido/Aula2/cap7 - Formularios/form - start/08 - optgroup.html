@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+  <head>
+    <title>Links para outros arquivos</title>
+  </head>
+  <body>
+    <h3>Formulário</h3>
+    <form id="formulario" action="valida.php" method="post">
+      <fieldset>
+	  <legend>Dados Pessoais</legend>
+	  <label for="nome">Nome completo</label>
+	  <input type="text" name="nome" id="nome" size="18" maxlength="100" />
+	  <br />
+	  <label for="nascimento">Data de nascimento</label>
+	  <input type="text" name="nascimento" id="nascimento" size="11" maxlength="10" />
+	  <br />
+	  <label for="senha">Senha de acesso</label>
+	  <input type="password" name="senha" id="senha" size="5" maxlength="4" />
+	  <br />
+	  <label for="foto">Imagem para exibição</label>
+	  <input type="file" name="foto" id="foto" size="18" />	
+	</fieldset>
+	<fieldset>
+	  <legend>Sua localização</legend>
+  	  <label for="uf">Estado</label>
+	  <select name="uf" id="uf" size="1">
+	    <option value="rs">Rio Grande do Sul</option>
+	    <option value="rj">Rio de Janeiro</option>
+	    <option value="sp">São Paulo</option>
+	  </select>
+	  <br />
+	  <label for="cidade">Cidade</label>
+	  <select name="cidade" id="cidade" size="1">
+	    <optgroup label="Sul">
+	      <option value="rs_poa">Porto Alegre</option>
+	      <option value="rs_cach">Cachoeirinha</option>
+	      <option value="rs_gram">Gramado</option>
+	    </optgroup>
+	    <optgroup label="Sudeste">
+	      <option value="rj_rj">Rio de Janeiro</option>
+	      <option value="sp_sp">São Paulo</option>
+	    </optgroup>
+	  </select>
+	</fieldset>
+	<fieldset>
+	  <legend>Seus treinamentos</legend>
+	  <input type="radio" name="formacao" id="formacao1" value="PHP" />
+	  <label for="formacao1">PHP</label>
+        <br />
+        <input type="radio" name="formacao" id="formacao2" value="Java" />
+        <label for="formacao2">Java</label>
+        <br />
+        <input type="radio" name="formacao" id="formacao3" value="dotnet" />
+        <label for="formacao3">.Net</label>
+        <br />
+        <input type="checkbox" name="curso1" id="curso1" value="xhtml" />
+        <label for="curso1">XHTML</label>
+        <br />
+        <input type="checkbox" name="curso2" id="curso2" value="css" />
+        <label for="curso2">CSS</label>
+        <br />
+        <input type="checkbox" name="curso3" id="curso3" value="javascript" checked="checked" />
+        <label for="curso3">Javascript</label>
+        <br />
+        Comentários:
+        <br />
+	</fieldset>
+     </form>
+   </body>
+</html>

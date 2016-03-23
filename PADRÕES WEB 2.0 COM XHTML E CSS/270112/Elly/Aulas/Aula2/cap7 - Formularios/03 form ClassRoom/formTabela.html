@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sem título</title>
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="conteudo">
+  <div class="box">
+    <h2>Contato</h2>
+    <form action="msg_enviada.html" method="post" name="form1" id="form1">
+      <table width="632" border="0" id="formTable">
+        <tr>
+          <td width="130" class="formLabel">Nome</td>
+          <td colspan="4" class="formComp"><input name="pw" type="text" class="inputField" id="pw" accesskey="p" tabindex="10" />
+            <br />
+            <br /></td>
+        </tr>
+        <tr>
+          <td class="formLabel">E-mail</td>
+          <td colspan="4" class="formComp"><span id="sprytextfield1">
+            <input name="email" type="text" class="inputField" id="email"  tabindex="20" />
+            <br />
+            <span class="textfieldRequiredMsg">Requer um endereço de e-mail completo </span></span> <br /></td>
+</tr>
+        <tr>
+          <td class="formLabel"><span class="formComp">
+            <label for="senha">Senha</label>
+          </span></td>
+          <td colspan="4" class="formComp"><span id="sprytextfield2">
+            <input type="password" name="senha" id="senha" accesskey="s" tabindex="30" />
+            <br />
+            <span class="textfieldRequiredMsg">É necessario inserir um valor</span><span class="textfieldMinCharsMsg">Minimo de 6 caracteres</span></span> <br /></td>
+</tr>
+        <tr>
+          <td class="formLabel">Mensagem</td>
+          <td colspan="4" class="formComp"><textarea name="business" cols="45" rows="3" class="inputField" id="business" tabindex="50" >Escreva aqui sua mensagem</textarea>
+            <br />
+            <br /></td>
+        </tr>
+        <tr>
+          <td class="formLabel">Idade</td>
+          <td width="113" class="formComp"><label>
+            <input type="radio" name="size" value="less10" id="size_0" accesskey="l" tabindex="60"/>
+            Menos de 10</label></td>
+          <td width="98" class="formComp"><label>
+            <input name="size" type="radio" class="formComp" id="size_1"  accesskey="1" tabindex="70" value="11to50"/>
+            11 a 50 </label></td>
+          <td width="113" class="formComp"><label>
+            <input name="size" type="radio" class="formComp" id="size_2" accesskey="5" tabindex="80" value="50to200"/>
+            50 a 200</label>
+            <br />
+            <br /></td>
+          <td width="156" class="formComp"><label>
+            <input type="radio" name="size" value="over200" id="size_3" accesskey="o" tabindex="90" />
+            Maior que 200</label>
+            <br />
+            <br /></td>
+        </tr>
+        <tr>
+          <td class="formLabel">Profissão</td>
+          <td class="formComp"><input type="checkbox" name="identity" id="identity" />
+            Estudante
+            <label for="redesign" class="formLabelDois"><br />
+              <br />
+            </label></td>
+          <td class="formComp"><input type="checkbox" name="newWeb" id="newWeb" />
+            <label for="newWeb">Designer</label>
+            &nbsp;
+            <label for="redesign" class="formLabelDois"> </label></td>
+          <td class="formComp"><input type="checkbox" name="redesign" id="redesign" />
+            Programador
+            <label for="redesign"><br />
+            </label></td>
+          <td class="formComp"><input type="checkbox" name="redesign2" id="redesign2" />
+            Outra
+            <label for="redesign2"><br />
+            </label></td>
+        </tr>
+        <tr>
+          <td class="formLabel"><p>Como encontrou a Target?</p></td>
+          <td colspan="4" class="formComp"><h4>
+            <select name="timeline" class="inputField" id="timeline">
+              <option value="escolher">escolha uma opção</option>
+              <option value="internet">Internet</option>
+              <option value="year">Amigos</option>
+              <option value="mídia">Mídia impressa</option>
+              <option value="universidade">Universidade</option>
+              <option value="outras">Outras</option>
+            </select>
+            <input type="submit" name="button" id="button" value="Submit" />
+            <br />
+            <br />
+          </h4></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4" class="formComp"><input type="submit" name="submit" id="submit" value="Enviar formulário" /></td>
+        </tr>
+      </table>
+      <span id="sprytextfield3"> <span class="textfieldRequiredMsg"></span></span>
+    </form>
+</div>
+  <div class="box">
+    <form action="msg_enviada.html" method="post" name="form1">
+      <table width="632" border="0">
+        <tr> </tr>
+        <tr> </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {minChars:6, validateOn:["blur"]});
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "email", {validateOn:["blur"]});
+</script>
+</body>
+</html>
